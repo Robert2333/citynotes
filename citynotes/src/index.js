@@ -8,9 +8,8 @@ console.log(app._store)
 // app.use({});
 
 // 3. Model
-  app.model(require('./models/example').default);
 app.model(require('./models/counter').default);
-
+app.model(require('./models/printer').default);
 
 // 4. Router
 app.router(require('./router').default);

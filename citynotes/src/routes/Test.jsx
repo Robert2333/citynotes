@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'dva';
 import { Button } from 'antd';
+import P from './printerContainer/PrintContainer'
 class Test extends React.Component {
     render() {
         return (
@@ -8,6 +9,7 @@ class Test extends React.Component {
                 <Button onClick={this.props.plus}>plus</Button>
                 <Button onClick={this.props.minus}>minus</Button>
                 <h1>{this.props.number}</h1>
+                <P/>
             </div>
         )
 
